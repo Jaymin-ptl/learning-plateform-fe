@@ -91,7 +91,7 @@ import { Difficulty } from '../../../core/models/topic.model';
               <textarea matInput formControlName="customPrompt" rows="10"
                         placeholder="Leave empty to use the default prompt..."></textarea>
               <mat-hint>
-                Available placeholders: {topic}, {description}, {difficulty}, {tags}, {date}, {recentSubtopics}
+                Available placeholders: {{ '{' }}topic{{ '}' }}, {{ '{' }}description{{ '}' }}, {{ '{' }}difficulty{{ '}' }}, {{ '{' }}tags{{ '}' }}, {{ '{' }}date{{ '}' }}, {{ '{' }}recentSubtopics{{ '}' }}
               </mat-hint>
             </mat-form-field>
           </mat-expansion-panel>
